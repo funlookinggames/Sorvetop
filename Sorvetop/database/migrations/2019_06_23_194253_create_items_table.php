@@ -19,7 +19,6 @@ class CreateItemsTable extends Migration
             $table->float('qtd');
             $table->float('preco', 8, 2);
             $table->integer('ven_id');
-            
             $table->foreign('ven_id')
                 ->references('id')
                 ->on('vendas');  
